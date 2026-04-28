@@ -2,6 +2,8 @@
 
 MediMitra is a responsive healthcare accessibility platform designed to simplify and improve access to essential healthcare services. The platform provides features such as teleconsultation, medicine tracking with reminders, and medicine delivery through an interactive and user-friendly interface.
 
+Demo : https://ayanka2005.github.io/MediMitra-Healthcare-Accessibility-Platform/
+
 ## Features
 
 * Teleconsultation interface for connecting with doctors
