@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MediMitra</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+  <div class="background-elements">
+    <img src="https://img.icons8.com/emoji/100/stethoscope.png" class="floating-icon" style="top: 80px; left: 20px;">
+    <img src="https://img.icons8.com/color/96/pill.png" class="floating-icon" style="top: 200px; right: 40px;">
+    <img src="https://img.icons8.com/emoji/96/red-heart.png" class="floating-icon" style="bottom: 100px; left: 60px;">
+    <img src="https://img.icons8.com/3d-fluency/94/medical-doctor.png" class="floating-icon" style="bottom: 60px; right: 30px;">
+    </div>
+    <svg class="blob blob1" viewBox="0 0 200 200">
+  <path fill="#c6dfc8" d="M43.6,-55.1C57.8,-44.3,71.7,-32.1,73.1,-18.3C74.5,-4.5,63.3,10.8,52.2,22.8C41,34.7,30,43.4,17.2,50.8C4.4,58.3,-10.2,64.6,-24.6,61.3C-39,58,-53.1,45.1,-61.5,29.7C-69.9,14.4,-72.5,-3.5,-66.7,-18.9C-60.9,-34.4,-46.8,-47.4,-32,-58C-17.2,-68.6,-1.7,-76.9,10.9,-74.9C23.5,-72.8,35.4,-60.6,43.6,-55.1Z" transform="translate(100 100)" />
+</svg>
+<svg class="blob blob2" viewBox="0 0 200 200">
+  <path fill="#f2c94c" d="M35.5,-47.5C47.6,-39.2,59.4,-29.5,64.3,-17.5C69.3,-5.6,67.5,8.8,61.3,20.3C55.2,31.7,44.6,40.2,33.4,47.1C22.2,54.1,11.1,59.4,-1.6,61.7C-14.4,63.9,-28.8,63.2,-41.7,56.3C-54.7,49.4,-66.2,36.4,-70.6,21.8C-75,7.1,-72.3,-9.2,-64.8,-22.1C-57.2,-35,-44.7,-44.5,-31.7,-51.3C-18.7,-58.1,-9.4,-62.2,2.2,-65.2C13.8,-68.3,27.5,-70.3,35.5,-63.9C43.4,-57.6,45.5,-43.5,35.5,-47.5Z" transform="translate(100 100)" />
+</svg>
+
+
+  <header>
+    <h1>MediMitra</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tracker.html">Medicine Tracker</a>
+    <a href="consultation.html">Consultation</a>
+      <a href="delivery.html">Delivery</a>
+
+      <a href="login.html" class="cta">Login</a>
+<a href="register.html" class="cta" style="margin-left: 1rem;">Register</a>
+
+
+    </nav>
+  </header>
+  <button id="theme-toggle" aria-label="Toggle Dark Mode">
+  🌙
+</button>
+
+
+<section class="hero">
+  <h2>Your Healthcare Buddy</h2>
+  <p>Access doctors, track medicines, and get your essentials delivered — all in one click.</p>
+ 
+
+  <div class="hero-icons">
+    <div class="icon-block">
+      <img src="https://img.icons8.com/fluency/64/stethoscope.png" alt="Doctor" />
+      <p>Consult</p>
+    </div>
+    <div class="icon-block">
+      <img src="https://img.icons8.com/fluency/64/pill.png" alt="Medicine" />
+      <p>Track</p>
+    </div>
+    <div class="icon-block">
+      <img src="https://img.icons8.com/fluency/64/delivery.png" alt="Delivery" />
+      <p>Deliver</p>
+      
+    </div>
+  </div>
+<a href="tracker.html" class="cta">Track Your Medicines</a>
+
+
+<!-- Animated Soft Blobs -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<!-- Extra Visual Fillers -->
+<div class="glow-circle glow1"></div>
+<div class="glow-circle glow2"></div>
+<div class="glow-circle glow3"></div>
+
+
+
+
+</section>
+<section class="about">
+  <div class="about-content">
+    <h3>About MediMitra</h3>
+    <p>
+      MediMitra is your one-stop solution for accessible, reliable healthcare. We combine teleconsultation,
+      medicine tracking, and doorstep medicine delivery — all into one seamless experience. Whether you're at home,
+      on the go, or caring for a loved one, MediMitra keeps your health a priority.
+    </p>
+
+    <div class="features">
+  <div class="feature-box">
+    <img src="https://img.icons8.com/color/48/medical-mobile-app.png" alt="App Icon" />
+    <h4>Teleconsultation</h4>
+    <p>Book appointments and consult doctors from anywhere.</p>
+  </div>
+ <div class="feature-box">
+  <img src="https://cdn-icons-png.flaticon.com/512/2907/2907487.png" alt="Pills Icon" width="48" height="48" />
+  <h4>Medicine Tracker</h4>
+  <p>Smart reminders to take and restock your medicines.</p>
+</div>
+
+  <div class="feature-box">
+    <img src="https://img.icons8.com/fluency/48/shipped.png" alt="Delivery Icon" />
+    <h4>Home Delivery</h4>
+    <p>Get medicines delivered fast, right to your door.</p>
+  </div>
+</div>
+<script>
+  const toggle = document.getElementById("theme-toggle");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+  });
+</script>
+
+
+
+
+
+
+  <footer>
+    <p>&copy; 2025 MediMitra. Made for ESD Project.</p>
+  </footer>
+</body>
+</html>

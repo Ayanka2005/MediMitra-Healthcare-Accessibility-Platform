@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediMitra | Register</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+  background: linear-gradient(135deg, #e8f5e9, #fffde7);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+    .register-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+    }
+
+    .register-card h2 {
+      margin-bottom: 1.5rem;
+      color: #2e4935;
+    }
+
+    .register-card input {
+      width: 100%;
+      padding: 0.9rem;
+      margin-bottom: 1rem;
+      border: 1px solid #cfd8dc;
+      border-radius: 12px;
+      font-size: 1rem;
+      background-color: #f8fafb;
+    }
+
+    .register-card button {
+      width: 100%;
+      padding: 0.9rem;
+      background-color: #81c784;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .register-card button:hover {
+      background-color: #66bb6a;
+    }
+
+    .register-card p {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .register-card a {
+      color: #558b2f;
+      text-decoration: none;
+    }
+
+    .register-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Dark mode */
+    body.dark {
+      background: linear-gradient(135deg, #1e2d25, #2f3c30);
+    }
+
+    body.dark .register-card {
+      background: #2b3b32;
+      color: #e0f2e9;
+    }
+
+    body.dark .register-card input {
+      background-color: #374940;
+      border: 1px solid #4e6357;
+      color: #f0f9f5;
+    }
+
+    body.dark .register-card button {
+      background-color: #aed581;
+      color: #1b2a1e;
+    }
+
+    body.dark .register-card button:hover {
+      background-color: #c5e1a5;
+    }
+
+    body.dark .register-card a {
+      color: #c8e6c9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-card">
+    <h2>Create Your MediMitra Account</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+  <!-- Dark mode toggle -->
+  <button id="theme-toggle" aria-label="Toggle Dark Mode" style="position: fixed; top: 1rem; right: 1rem; font-size: 1.5rem;">🌙</button>
+
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>
